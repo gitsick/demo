@@ -19,6 +19,6 @@ public class Mycontroller {
     private String appName;
      @RequestMapping("/boot")
      public String getMyBabby(){
-          return appName+"启动了。。。。。";
+          return appName+" Hello World! 启动了。。。。。";
      }
 }
