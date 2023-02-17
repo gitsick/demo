@@ -1,9 +1,7 @@
 server:
-  port: 8081
-
+  port: 8083 #设置服务端口
 spring:
   application:
-    name: jenkinsDemo
+    name: jenkinsDemo #项目名
   profiles:
-    active:
-      - prod
+    active: pro  #多配置文件选择

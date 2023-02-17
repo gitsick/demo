@@ -1,6 +1,3 @@
-person:
-  name: jack
-
 spring:
   # 配置数据源
   datasource:
@@ -56,6 +53,17 @@ management:
   security:
     enabled: false
 
+# 配置mybatis
+#mybatis:
+  # 配置类型别名包扫描
+ # type-aliases-package: com.xxx.xxx.pojo
+  # 配置sql语句映射文件路径
+  #mapper-locations:
+   # - classpath:mappers/*.xml
+  # 驼峰映射
+  #configuration:
+    #map-underscore-to-camel-case: true
+
 # mybatis-plus相关配置
 mybatis-plus:
   # xml扫描，多个目录用逗号或者分号分隔（告诉 Mapper 所对应的 XML 文件位置）
@@ -91,3 +99,10 @@ mybatis-plus:
     #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     # 解决oracle更新数据为null时无法转换报错，mysql不会出现此情况
     jdbc-type-for-null: 'null'
+
+# 配置日志
+logging:
+  level:
+    com.xxx: debug
+person:
+  name: jack
